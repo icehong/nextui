@@ -51,15 +51,15 @@ nx.define('MyNodeTooltip', nx.ui.Component, {
                             }, {
                                 tag: "td",
                                 content: "{packets}",
-								props: {
-									bgColor: function(data) {
-										if(data.get("packets") == 12 ) {
-											return 'red'
-										} else {
-											return 'green'
-										}
-									}
-								}
+                                props: {
+                                    bgColor: function(data) {
+                                        if(data.get("packets") == 12 ) {
+                                            return 'red'
+                                        } else {
+                                            return 'green'
+                                        }
+                                    }
+                                }
                             }, {
                                 tag: "td",
                                 content: "{bytes}"
@@ -95,7 +95,7 @@ nx.define('MyNodeTooltip', nx.ui.Component, {
                         // multiple link type is curve, could change to 'parallel' to use parallel link
                         linkType: 'curve'
                     },
-					tooltipManagerConfig: {
+                    tooltipManagerConfig: {
                         nodeTooltipContentClass: 'MyNodeTooltip'
                     },
                     // show node's icon, could change to false to show dot
