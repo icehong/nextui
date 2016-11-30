@@ -13,17 +13,17 @@ var topologyData = {
                 "nodeName": "node3",
                 "packets": "12",
                 "bytes": "154",
-                "bytes": "4"
+                "color": "red"
             }, {
                 "nodeName": "node5",
                 "packets": "12",
                 "bytes": "154",
-                "bytes": "4"
+                "color": "red"
             }, {
                 "nodeName": "node1",
                 "packets": "13",
                 "bytes": "121",
-                "bytes": "5"
+                "color": "green"
             }]
         }, {
             "id": 2,
@@ -79,7 +79,7 @@ var topologyData = {
             "target": 3
         }]
     };
-	
-	var mainModel = {
+    
+    var mainModel = {
         username: 'root'
     };

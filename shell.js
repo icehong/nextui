@@ -52,14 +52,8 @@ nx.define('MyNodeTooltip', nx.ui.Component, {
                                 tag: "td",
                                 content: "{packets}",
                                 props: {
-                                    bgColor: function(data) {
-                                        if(data.get("packets") == 12 ) {
-                                            return 'red'
-                                        } else {
-                                            return 'green'
-                                        }
-                                    }
-                                }
+									bgColor: "{color}"
+								}
                             }, {
                                 tag: "td",
                                 content: "{bytes}"
